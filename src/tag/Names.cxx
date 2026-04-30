@@ -3,6 +3,7 @@
 
 #include "Names.hxx"
 #include "Table.hxx"
+#include "Type.hxx"
 
 #include <cassert>
 
@@ -44,6 +45,7 @@ static constexpr struct tag_table tag_item_names_init[] = {
 	{"MUSICBRAINZ_RELEASETRACKID", TAG_MUSICBRAINZ_RELEASETRACKID},
 	{"MUSICBRAINZ_WORKID", TAG_MUSICBRAINZ_WORKID},
 	{"MUSICBRAINZ_RELEASEGROUPID", TAG_MUSICBRAINZ_RELEASEGROUPID},
+	{"POPULARITY", TAG_POPULARITY}
 };
 
 /**

@@ -20,6 +20,7 @@
 #include "tag/Builder.hxx"
 #include "tag/Tag.hxx"
 #include "tag/ParseName.hxx"
+#include "tag/Type.hxx"
 #include "tag/WithTagBuffer.hxx"
 #include "lib/fmt/RuntimeError.hxx"
 #include "util/RecursiveMap.hxx"
@@ -171,7 +172,7 @@ static constexpr struct {
 	{ TAG_LABEL, MPD_TAG_LABEL },
 	{ TAG_GROUPING, MPD_TAG_GROUPING },
 	{ TAG_MUSICBRAINZ_WORKID, MPD_TAG_MUSICBRAINZ_WORKID },
-#endif
+#endif 
 #if LIBMPDCLIENT_CHECK_VERSION(2,20,0)
 	{ TAG_COMPOSERSORT, MPD_TAG_COMPOSER_SORT },
 	{ TAG_ENSEMBLE, MPD_TAG_ENSEMBLE },
@@ -187,6 +188,7 @@ static constexpr struct {
 #if LIBMPDCLIENT_CHECK_VERSION(2,23,0)
 	{ TAG_SHOWMOVEMENT, MPD_TAG_SHOWMOVEMENT },
 #endif
+		// {TAG_POPULARITY, MPD_TAG_POPULARITY },
 	{ TAG_NUM_OF_ITEM_TYPES, MPD_TAG_COUNT }
 };
 

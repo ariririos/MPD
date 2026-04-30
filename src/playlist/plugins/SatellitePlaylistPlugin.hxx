@@ -1,0 +1,6 @@
+#ifndef MPD_SATELLITE_PLAYLIST_PLUGIN_HXX
+#define MPD_SATELLITE_PLAYLIST_PLUGIN_HXX
+
+extern const struct PlaylistPlugin satellite_playlist_plugin;
+
+#endif
